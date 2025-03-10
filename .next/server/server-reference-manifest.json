@@ -1,0 +1,39 @@
+{
+  "node": {
+    "40f0072ffedc6b0f581fb3a3b764dcb80dea5917d6": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/components/Server/FetchGithub.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/components/Server/EmailSend.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    },
+    "4020c756a7bdefa28d5ecf9486e06f197b976a657f": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/components/Server/FetchGithub.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/components/Server/EmailSend.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    },
+    "40e4d781a4391a9bbc755ea9dbffd44906edc8c04c": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/app/components/Server/FetchGithub.tsx [app-rsc] (ecmascript)\", ACTIONS_MODULE1 => \"[project]/app/components/Server/EmailSend.tsx [app-rsc] (ecmascript)\" } [app-rsc] (ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "3oftEMQQcOMxuhbvbs1NHhB2MyACniKZxwP/MbVHMVo="
+}
