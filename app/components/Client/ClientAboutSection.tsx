@@ -2,6 +2,10 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+<<<<<<< HEAD
+=======
+import Link from "next/link";
+>>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
 
 // Define skill data with categories and icons
 const skillCategories = [
@@ -716,9 +720,39 @@ user experiences.
                         </div>
 
                         <div className="bg-gray-900/50 rounded-lg p-5 border border-gray-700 shadow-lg hover:shadow-blue-900/10 transition-shadow">
+<<<<<<< HEAD
                           <h4 className="text-xl font-semibold text-blue-400">
                             {item.degree}
                           </h4>
+=======
+                          <div className="flex justify-between items-start gap-3 mb-2">
+                            <h4 className="text-xl font-semibold text-blue-400 flex-1">
+                              {item.degree}
+                            </h4>
+                            {index === 0 && (
+                              <Link
+                                href="/masters-journey"
+                                className="bg-blue-600/20 hover:bg-blue-600/30 text-blue-400 hover:text-blue-300 px-3 py-1.5 rounded-full text-xs font-medium transition-all duration-300 inline-flex items-center gap-1.5 whitespace-nowrap border border-blue-500/30 hover:border-blue-500/50 flex-shrink-0"
+                              >
+                                My Journey
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  className="h-3 w-3"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke="currentColor"
+                                >
+                                  <path
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                    strokeWidth={2}
+                                    d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                  />
+                                </svg>
+                              </Link>
+                            )}
+                          </div>
+>>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
                           <div className="flex items-center gap-2 mt-1 mb-3">
                             <span className="text-gray-400">
                               {item.institution}

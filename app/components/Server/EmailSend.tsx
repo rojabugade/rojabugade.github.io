@@ -3,11 +3,18 @@
 import { Resend } from "resend";
 // Ensure API key exists
 const resendApiKey = process.env.RESEND_API_KEY;
+<<<<<<< HEAD
 if (!resendApiKey) {
   throw new Error("RESEND_API_KEY is not defined in environment variables");
 }
 // Initialize Resend with your API key from environment variables
 const resend = new Resend(resendApiKey);
+=======
+
+if (!resendApiKey) {
+  throw new Error("RESEND_API_KEY is not defined in environment variables");
+}
+>>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
 
 // Define the structure of the email form data
 interface EmailData {
@@ -37,8 +44,26 @@ export async function sendEmail(formData: EmailData) {
       };
     }
 
+<<<<<<< HEAD
     // Send email using Resend
     const { data, error } = await resend.emails.send({
+=======
+    // Check if Resend is available
+    if (!resendApiKey) {
+      console.log(
+        "Email service not configured (RESEND_API_KEY missing). Mock email sent."
+      );
+      return {
+        success: true,
+        message:
+          "Message sent successfully! (Development mode - email not actually sent)",
+      };
+    }
+
+    // Send email using Resend
+    const resend = new Resend(resendApiKey);
+    const { error } = await resend.emails.send({
+>>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
       from: "Portfolio Contact Form <onboarding@resend.dev>", // Replace with your verified domain
       to: ["zorazee25@gmail.com"], // Your primary email address
       subject: formData.subject || "New Portfolio Contact Form Submission",
@@ -77,6 +102,11 @@ export async function sendEmail(formData: EmailData) {
     return {
       success: false,
       error: "An unexpected error occurred. Please try again.",
+<<<<<<< HEAD
     };
   }
+=======
+    };
+  }
+>>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
 }

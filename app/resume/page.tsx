@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 // app/resume/page.tsx 
+=======
+// app/resume/page.tsx
+import Link from "next/link";
+
+>>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
 export default function ResumePage() {
   return (
     <div className="min-h-screen bg-black text-white pt-20 px-4">
