@@ -2,10 +2,8 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-<<<<<<< HEAD
-=======
+
 import Link from "next/link";
->>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
 
 // Define skill data with categories and icons
 const skillCategories = [
@@ -720,11 +718,9 @@ user experiences.
                         </div>
 
                         <div className="bg-gray-900/50 rounded-lg p-5 border border-gray-700 shadow-lg hover:shadow-blue-900/10 transition-shadow">
-<<<<<<< HEAD
                           <h4 className="text-xl font-semibold text-blue-400">
                             {item.degree}
                           </h4>
-=======
                           <div className="flex justify-between items-start gap-3 mb-2">
                             <h4 className="text-xl font-semibold text-blue-400 flex-1">
                               {item.degree}
@@ -752,7 +748,6 @@ user experiences.
                               </Link>
                             )}
                           </div>
->>>>>>> a74aced (Refactor code structure for improved readability and maintainability)
                           <div className="flex items-center gap-2 mt-1 mb-3">
                             <span className="text-gray-400">
                               {item.institution}
