@@ -46,7 +46,7 @@ export default function MastersJourneyPage() {
           </p>
         </motion.div>
 
-        {/* Video Presentation Section
+        {/* Video Presentation Section */}
         <motion.section
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -56,16 +56,20 @@ export default function MastersJourneyPage() {
           <h2 className="text-3xl font-semibold mb-4 text-blue-400">
             Personal Reflection
           </h2>
-          <div className="aspect-video bg-gray-900/50 rounded-lg mb-4 flex items-center justify-center border border-gray-700">
-            <p className="text-gray-400">
-              [Video Embed Placeholder - Add your Loom or YouTube video here]
-            </p>
+          <div className="aspect-video bg-gray-900/50 rounded-lg mb-4 flex items-center justify-center border border-gray-700 overflow-hidden">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/1QLqcKW7S0s"
+              title="Master's Journey Reflection"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </div>
           <p className="text-gray-300">
             A brief summary of my experience in the Applied Data Science program
             and my transition from Software Engineering to Data Platforms.
           </p>
-        </motion.section> */}
+        </motion.section>
 
         {/* Program Learning Outcomes Section */}
         <motion.section
